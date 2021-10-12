@@ -8,11 +8,11 @@
     tools:context=".ui.activities.SplashScreenActivity">
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="72dp"
-        android:layout_height="71dp"
-        android:layout_marginTop="251dp"
-        android:padding="7dp"
+        android:id="@+id/hagglex_logo_imageView"
+        android:layout_width="@dimen/width_72dp"
+        android:layout_height="@dimen/height_71dp"
+        android:layout_marginTop="@dimen/margin_251dp"
+        android:padding="@dimen/padding_7dp"
         android:src="@drawable/hagglex_logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,15 +21,15 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="HaggleX"
+        android:text="@string/all_hagglex_text"
         android:textColor="@color/white"
-        android:textSize="23sp"
-        android:layout_marginTop="14dp"
+        android:textSize="@dimen/textSize_23sp"
+        android:layout_marginTop="@dimen/margin_14dp"
         android:fontFamily="@font/basis_brotesque_pro_bold"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/imageView2"
-        app:layout_constraintStart_toStartOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintEnd_toEndOf="@+id/hagglex_logo_imageView"
+        app:layout_constraintStart_toStartOf="@+id/hagglex_logo_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/hagglex_logo_imageView" />
 
 
 

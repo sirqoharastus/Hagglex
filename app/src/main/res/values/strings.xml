@@ -2,4 +2,29 @@
     <string name="app_name">Hagglex</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_world_text">Hello World!</string>
+    <string name="dashboard_text">Dashboard</string>
+    <string name="all_hagglex_text">HaggleX</string>
+    <string name="create_a_new_account_text">Create a new account</string>
+    <string name="email_address_text">Email Address</string>
+    <string name="password_min_8_characters_text">Password (Min 8 characters)</string>
+    <string name="create_a_username_text">Create a username</string>
+    <string name="enter_your_phone_number_text">Enter your phone number</string>
+    <string name="referral_code_optional_text">Referral code (optional)</string>
+    <string name="by_signing_you_agree_to_hagglex_terms_and_privacy_policy_text">By signing, you agree to HaggleX terms and privacy policy.</string>
+    <string name="sign_up_text">SIGN UP</string>
+    <string name="welcome_text">Welcome!</string>
+    <string name="email_address_text">Email Address</string>
+    <string name="forgot_password_text">Forgot Password?</string>
+    <string name="log_in_text">LOG IN</string>
+    <string name="new_user_create_a_new_account_text">New User?Create a new account</string>
+    <string name="setup_complete_text">Setup Complete</string>
+    <string name="thank_you_for_setting_up_your_hagglex_account_text">Thank you for setting up your HaggleX account</string>
+    <string name="start_exploring_text">start exploring</string>
+    <string name="verify_your_account_text">Verify your account</string>
+    <string name="we_just_sent_a_verification_code_to_your_email_please_enter_the_code_text">We just sent a verification code to your email. Please enter the code</string>
+    <string name="verification_code_text">Verification code</string>
+    <string name="verify_me_text">VERIFY ME</string>
+    <string name="this_code_will_expire_in_10_minutes_text">This code will expire in 10 minutes</string>
+    <string name="resend_code_text">Resend Code</string>
 </resources>
