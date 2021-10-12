@@ -1,0 +1,17 @@
+mutation register($user:CreateUserInput){
+    register(data:$user){
+        user{
+            _id
+            email
+            phonenumber
+            totalReferralEarning
+            username
+            role{
+                _id
+                role
+                description
+            }
+        }
+        token
+    }
+}

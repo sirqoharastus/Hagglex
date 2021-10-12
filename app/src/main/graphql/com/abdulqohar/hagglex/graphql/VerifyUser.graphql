@@ -1,0 +1,9 @@
+mutation verifyUser($data:VerifyUserInput){
+    verifyUser(data:$data){
+        user{
+            _id
+            username
+            phonenumber
+        }
+    }
+}

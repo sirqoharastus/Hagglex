@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/authentication_nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.abdulqohar.hagglex.ui.fragments.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_createAccountFragment"
+            app:destination="@id/createAccountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createAccountFragment"
+        android:name="com.abdulqohar.hagglex.ui.fragments.CreateAccountFragment"
+        android:label="fragment_create_account"
+        tools:layout="@layout/fragment_create_account" >
+        <action
+            android:id="@+id/action_createAccountFragment_to_verifyAccountFragment"
+            app:destination="@id/verifyAccountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/verifyAccountFragment"
+        android:name="com.abdulqohar.hagglex.ui.fragments.VerifyAccountFragment"
+        android:label="fragment_verify_account"
+        tools:layout="@layout/fragment_verify_account" >
+        <action
+            android:id="@+id/action_verifyAccountFragment_to_setupCompleteFragment"
+            app:destination="@id/setupCompleteFragment" />
+        <argument
+            android:name="email"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/setupCompleteFragment"
+        android:name="com.abdulqohar.hagglex.ui.fragments.SetupCompleteFragment"
+        android:label="fragment_setup_complete"
+        tools:layout="@layout/fragment_setup_complete" >
+        <action
+            android:id="@+id/action_setupCompleteFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+</navigation>

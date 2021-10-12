@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_splash_screen_background"
+    tools:context=".ui.fragments.SetupCompleteFragment">
+
+    <ImageView
+        android:id="@+id/setup_complete_fragment_completion_tick_imageView"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="217dp"
+        android:src="@drawable/setup_complete_check_mark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/setup_complete_fragment_setup_complete_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/basis_brotesque_pro_bold"
+        android:text="Setup Complete"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/setup_complete_fragment_completion_tick_imageView"
+        app:layout_constraintStart_toStartOf="@+id/setup_complete_fragment_completion_tick_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/setup_complete_fragment_completion_tick_imageView" />
+
+    <TextView
+        android:id="@+id/setup_complete_fragment_appreciation_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/basis_brotesque_pro_bold"
+        android:text="Thank you for setting up your HaggleX account"
+        android:textColor="@color/white"
+        android:textSize="9dp"
+        app:layout_constraintEnd_toEndOf="@+id/setup_complete_fragment_setup_complete_textView"
+        app:layout_constraintStart_toStartOf="@+id/setup_complete_fragment_setup_complete_textView"
+        app:layout_constraintTop_toBottomOf="@+id/setup_complete_fragment_setup_complete_textView" />
+
+
+    <Button
+        android:id="@+id/setup_complete_fragment_start_exploring_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="222dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="114dp"
+        android:background="@drawable/yellow_button_background"
+        android:fontFamily="@font/basis_brotesque_pro_bold"
+        android:padding="17dp"
+        android:text="start exploring"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setup_complete_fragment_appreciation_textView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

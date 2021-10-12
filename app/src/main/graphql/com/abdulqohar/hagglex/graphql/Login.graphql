@@ -1,0 +1,12 @@
+mutation Login($data:LoginInput!){
+    login(data:$data){
+        user{
+            _id
+            username
+            email
+            phonenumber
+        }
+        token
+        twoFactorAuth
+    }
+}

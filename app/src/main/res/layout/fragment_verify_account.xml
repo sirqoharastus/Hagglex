@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ic_splash_screen_background"
+    tools:context=".ui.fragments.VerifyAccountFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/verify_user_fragment_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/verify_user_fragment_verify_your_account_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/basis_brotesque_pro_bold"
+            android:text="Verify your account"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/verify_user_fragment_toolbar" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/verify_user_fragment_verify_me_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginBottom="111dp"
+            android:background="@drawable/create_aaccount_white_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/verify_user_fragment_verify_your_account_textView">
+
+            <ImageView
+                android:id="@+id/verify_user_fragment_verification_tick_imageView"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="41dp"
+                android:src="@drawable/verification_tick"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/verify_user_fragment_sent_verification_mail_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="45dp"
+                android:fontFamily="@font/basis_brotesque_pro_bold"
+                android:gravity="center"
+                android:text="We just sent a verification code to your email. Please enter the code"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/verify_user_fragment_verification_tick_imageView" />
+
+            <EditText
+                android:id="@+id/verify_user_fragment_verification_code_editText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:backgroundTint="@color/black"
+                android:hint="Verification code"
+                android:fontFamily="@font/basis_brotesque_pro_bold"
+                android:textColorHint="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/verify_user_fragment_sent_verification_mail_textView"
+                app:layout_constraintStart_toStartOf="@+id/verify_user_fragment_sent_verification_mail_textView"
+                app:layout_constraintTop_toBottomOf="@+id/verify_user_fragment_sent_verification_mail_textView" />
+
+            <Button
+                android:id="@+id/verify_user_fragment_verify_me_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/purple_button_background"
+                android:padding="17dp"
+                android:text="VERIFY ME"
+                android:fontFamily="@font/basis_brotesque_pro_bold"
+                android:textColor="@color/white"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="@+id/verify_user_fragment_verification_code_editText"
+                app:layout_constraintStart_toStartOf="@+id/verify_user_fragment_verification_code_editText"
+                app:layout_constraintTop_toBottomOf="@+id/verify_user_fragment_verification_code_editText" />
+
+            <TextView
+                android:id="@+id/verify_user_fragment_code_expires_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/basis_brotesque_pro_bold"
+                android:text="This code will expire in 10 minutes"
+                android:textColor="@color/black"
+                android:textSize="9sp"
+                app:layout_constraintEnd_toEndOf="@+id/verify_user_fragment_verify_me_button"
+                app:layout_constraintStart_toStartOf="@+id/verify_user_fragment_verify_me_button"
+                app:layout_constraintTop_toBottomOf="@+id/verify_user_fragment_verify_me_button" />
+
+            <TextView
+                android:id="@+id/verify_user_fragment_resend_code_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="49dp"
+                android:layout_marginBottom="70dp"
+                android:fontFamily="@font/basis_brotesque_pro_bold"
+                android:text="Resend Code"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/verify_user_fragment_code_expires_textView"
+                app:layout_constraintStart_toStartOf="@+id/verify_user_fragment_code_expires_textView"
+                app:layout_constraintTop_toBottomOf="@+id/verify_user_fragment_code_expires_textView" />
+
+            <ProgressBar
+                android:id="@+id/verify_user_fragment_progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:backgroundTint="@color/white"
+                android:elevation="20dp"
+                android:indeterminate="true"
+                android:visibility="gone"
+                android:indeterminateDrawable="@drawable/custom_progressbar"
+                app:layout_constraintBottom_toBottomOf="@+id/verify_user_fragment_verify_me_button"
+                app:layout_constraintEnd_toEndOf="@+id/verify_user_fragment_verify_me_button"
+                app:layout_constraintStart_toStartOf="@+id/verify_user_fragment_verify_me_button"
+                app:layout_constraintTop_toTopOf="@+id/verify_user_fragment_verify_me_button" />
+
+            <ProgressBar
+                android:id="@+id/verify_user_fragment_resend_code_progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:backgroundTint="@color/white"
+                android:elevation="20dp"
+                android:indeterminate="true"
+                android:visibility="gone"
+                android:indeterminateDrawable="@drawable/custom_progressbar"
+                app:layout_constraintBottom_toBottomOf="@+id/verify_user_fragment_resend_code_textView"
+                app:layout_constraintEnd_toEndOf="@+id/verify_user_fragment_resend_code_textView"
+                app:layout_constraintStart_toStartOf="@+id/verify_user_fragment_resend_code_textView"
+                app:layout_constraintTop_toTopOf="@+id/verify_user_fragment_resend_code_textView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

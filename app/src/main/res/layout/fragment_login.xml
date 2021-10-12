@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_splash_screen_background"
+    tools:context=".ui.fragments.LoginFragment">
+
+    <TextView
+        android:id="@+id/login_fragment_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="110dp"
+        android:fontFamily="@font/basis_brotesque_pro_bold"
+        android:text="Welcome!"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/login_fragment_email_textInput_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="57dp"
+        app:hintTextColor="@color/white"
+        android:textColorHint="@color/white"
+        app:boxStrokeColor="@color/white"
+        android:outlineAmbientShadowColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/login_fragment_textView"
+        app:layout_constraintTop_toBottomOf="@+id/login_fragment_textView">
+
+        <EditText
+            android:id="@+id/login_fragment_email_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:hint="Email Address"
+            app:backgroundTint="#432B7B"
+            android:ems="10"
+            android:textColor="@color/white"
+            android:fontFamily="@font/basis_brotesque_pro_bold"
+            android:textColorHint="@color/white"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/login_fragment_password_text_input_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:hintTextColor="@color/white"
+        android:textColorHint="@color/white"
+        app:boxStrokeColor="@color/white"
+        android:outlineAmbientShadowColor="@color/white"
+        android:layout_marginTop="35dp"
+        app:layout_constraintEnd_toEndOf="@+id/login_fragment_email_textInput_layout"
+        app:layout_constraintStart_toStartOf="@+id/login_fragment_email_textInput_layout"
+        app:layout_constraintTop_toBottomOf="@+id/login_fragment_email_textInput_layout">
+
+        <EditText
+            android:id="@+id/login_fragment_password_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            app:backgroundTint="#432B7B"
+            android:ems="10"
+            android:textColor="@color/white"
+            android:fontFamily="@font/basis_brotesque_pro_bold"
+            android:hint="Password (Min. 8 characters)"
+            android:textColorHint="@color/white"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/login_fragment_forgot_password_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/basis_brotesque_pro_bold"
+        android:text="Forgot Password?"
+        android:textColor="@color/white"
+        android:textSize="11dp"
+        app:layout_constraintEnd_toEndOf="@+id/login_fragment_password_text_input_layout"
+        app:layout_constraintTop_toBottomOf="@+id/login_fragment_password_text_input_layout" />
+
+    <Button
+        android:id="@+id/login_fragment_log_in_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/yellow_button_background"
+        android:padding="13dp"
+        android:text="LOG IN"
+        android:fontFamily="@font/basis_brotesque_pro_bold"
+        android:textColor="@color/black"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="@+id/login_fragment_forgot_password_textView"
+        app:layout_constraintStart_toStartOf="@+id/login_fragment_password_text_input_layout"
+        app:layout_constraintTop_toBottomOf="@+id/login_fragment_forgot_password_textView" />
+
+    <TextView
+        android:id="@+id/login_fragment_create_new_acount_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:text="New User?Create a new account"
+        android:fontFamily="@font/basis_brotesque_pro_bold"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/login_fragment_log_in_button"
+        app:layout_constraintStart_toStartOf="@+id/login_fragment_log_in_button"
+        app:layout_constraintTop_toBottomOf="@+id/login_fragment_log_in_button" />
+
+    <ProgressBar
+        android:id="@+id/login_fragment_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/white"
+        android:elevation="20dp"
+        android:indeterminate="true"
+        android:visibility="gone"
+        android:indeterminateDrawable="@drawable/custom_progressbar"
+        app:layout_constraintBottom_toBottomOf="@+id/login_fragment_log_in_button"
+        app:layout_constraintEnd_toEndOf="@+id/login_fragment_log_in_button"
+        app:layout_constraintStart_toStartOf="@+id/login_fragment_log_in_button"
+        app:layout_constraintTop_toTopOf="@+id/login_fragment_log_in_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
