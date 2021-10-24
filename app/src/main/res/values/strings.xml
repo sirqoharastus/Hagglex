@@ -6,7 +6,6 @@
     <string name="dashboard_text">Dashboard</string>
     <string name="all_hagglex_text">HaggleX</string>
     <string name="create_a_new_account_text">Create a new account</string>
-    <string name="email_address_text">Email Address</string>
     <string name="password_min_8_characters_text">Password (Min 8 characters)</string>
     <string name="create_a_username_text">Create a username</string>
     <string name="enter_your_phone_number_text">Enter your phone number</string>

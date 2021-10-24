@@ -132,7 +132,6 @@
     <dimen name="height_71dp">71dp</dimen>
     <dimen name="margin_251dp">251dp</dimen>
     <dimen name="textSize_23sp">23sp</dimen>
-    <dimen name="width_0dp">0dp</dimen>
     <dimen name="margin_90dp">90dp</dimen>
     <dimen name="margin_50dp">50dp</dimen>
     <dimen name="margin_44dp">44dp</dimen>
@@ -147,7 +146,6 @@
     <dimen name="textSize_9sp">9sp</dimen>
     <dimen name="margin_222dp">222dp</dimen>
     <dimen name="margin_114dp">114dp</dimen>
-    <dimen name="margin_45dp">45dp</dimen>
     <dimen name="textSize_25sp">25sp</dimen>
     <dimen name="margin_111dp">111dp</dimen>
     <dimen name="margin_49dp">49dp</dimen>
